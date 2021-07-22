@@ -1,0 +1,14 @@
+<button id="button" (click)="toggledata()">Data source 1</button>
+
+<button id="button" (click)="retoggledata()">Data source 2</button>
+
+
+<ejs-spreadsheet #spreadSheetInstance>
+  <e-sheets>
+    <e-sheet name="Work Orders">
+      <e-ranges>
+        <e-range [dataSource]="data"></e-range>
+      </e-ranges>
+    </e-sheet>
+  </e-sheets>
+</ejs-spreadsheet>
